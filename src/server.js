@@ -8,7 +8,8 @@ app.set('views', './src/views');
 
 
 
-app.use('/myApp', render);
+app.use(render);
+
 
 app.listen(3000, () => {
     console.log("Service listening port 3000");
