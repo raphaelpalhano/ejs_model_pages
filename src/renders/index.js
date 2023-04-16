@@ -15,7 +15,7 @@ router.use((req, res, next) => {
 
 router.get('/', (req, res) => {
     
-    res.render('index', baseData);
+    res.render('pages/index', baseData);
 })
     
 
@@ -24,7 +24,7 @@ router.get('/about', (req, res) => {
     baseData['p1'] = "O projeto é sobre o treinamento em EJS. Uma maneira de modelar o html utilizando o nodejs com express."
 
 
-    res.render('about', baseData);
+    res.render('pages/about', baseData);
 })
     
 
